@@ -14,34 +14,56 @@ function check(){
     var q13 = document.theForm.q13.value;
 
     var correct = 0;
-    console.log(correct);
     var incorrect = 0;
-    console.log(incorrect);
 
     if(q1=="b"){
         correct++;
+    } else{
+        incorrect++;
     } if (q2=="b"){
         correct++;
+    } else{
+        incorrect++;
     } if (q3=="c"){
         correct++;
+    } else{
+        incorrect++;
     } if (q4=="d"){
         correct++;
+    } else{
+        incorrect++;
     } if (q5=="c"){
         correct++;
+    } else{
+        incorrect++;
     } if (q6=="d"){
         correct++;
+    } else{
+        incorrect++;
     } if (q7=="b"){
         correct++;
+    } else{
+        incorrect++;
     } if (q8=="d"){
         correct++;
+    } else{
+        incorrect++;
     } if (q9=="c"){
         correct++;
+    } else{
+        incorrect++;
     } if (q10=="b"){
         correct++;
+    } else{
+        incorrect++;
     } if (q11=="c"){
         correct++;
+    } else{
+        incorrect++;
     } if (q12=="b"){
         correct++;
+    } else{
+        incorrect++;
     } if (q13=="d"){
         correct++;
     } else{
