@@ -1,3 +1,12 @@
+function myFunction() {
+    var x = document.getElementById("form");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
 function check(){
     var q1 = document.theForm.q1.value;
     var q2 = document.theForm.q2.value;
