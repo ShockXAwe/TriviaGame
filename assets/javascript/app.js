@@ -1,13 +1,19 @@
 function myFunction() {
     var x = document.getElementById("form");
     if (x.style.display === "none") {
-      x.style.display = "block";
+        x.style.display = "block";
     } else {
-      x.style.display = "none";
+        x.style.display = "none";
     }
-  }
 
-function check(){
+}
+// var COUNTER = 120;
+// var interval=setInterval(function () {
+//     counter--;
+//     console.log(counter);
+//     //if counter==0
+// // }, 1000)
+function check() {
     var q1 = document.theForm.q1.value;
     var q2 = document.theForm.q2.value;
     var q3 = document.theForm.q3.value;
@@ -25,57 +31,57 @@ function check(){
     var correct = 0;
     var incorrect = 0;
 
-    if(q1=="b"){
+    if (q1 == "b") {
         correct++;
-    } else{
+    } else {
         incorrect++;
-    } if (q2=="b"){
+    } if (q2 == "b") {
         correct++;
-    } else{
+    } else {
         incorrect++;
-    } if (q3=="c"){
+    } if (q3 == "c") {
         correct++;
-    } else{
+    } else {
         incorrect++;
-    } if (q4=="d"){
+    } if (q4 == "d") {
         correct++;
-    } else{
+    } else {
         incorrect++;
-    } if (q5=="c"){
+    } if (q5 == "c") {
         correct++;
-    } else{
+    } else {
         incorrect++;
-    } if (q6=="d"){
+    } if (q6 == "d") {
         correct++;
-    } else{
+    } else {
         incorrect++;
-    } if (q7=="b"){
+    } if (q7 == "b") {
         correct++;
-    } else{
+    } else {
         incorrect++;
-    } if (q8=="d"){
+    } if (q8 == "d") {
         correct++;
-    } else{
+    } else {
         incorrect++;
-    } if (q9=="c"){
+    } if (q9 == "c") {
         correct++;
-    } else{
+    } else {
         incorrect++;
-    } if (q10=="b"){
+    } if (q10 == "b") {
         correct++;
-    } else{
+    } else {
         incorrect++;
-    } if (q11=="c"){
+    } if (q11 == "c") {
         correct++;
-    } else{
+    } else {
         incorrect++;
-    } if (q12=="b"){
+    } if (q12 == "b") {
         correct++;
-    } else{
+    } else {
         incorrect++;
-    } if (q13=="d"){
+    } if (q13 == "d") {
         correct++;
-    } else{
+    } else {
         incorrect++;
     }
     alert("you got: " + correct + " correct, and: " + incorrect + " incorrect")
