@@ -1,18 +1,47 @@
-function myFunction() {
-    var x = document.getElementById("form");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
+$("#form").hide();
+$("#endGameTimeUp").hide();
+$("#endGameSubmit").hide();
 
-}
-// var COUNTER = 120;
-// var interval=setInterval(function () {
-//     counter--;
-//     console.log(counter);
-//     //if counter==0
-// // }, 1000)
+var correct = 0;
+var incorrect = 0;
+
+
+
+$("#start").click(function () {
+    $("#form").show();
+    $("#instructions").hide();
+    $("#start").hide();
+
+    var counter = 10;
+    setInterval(function () {
+        counter--;
+        $("#counter").text("Time remaining: " + counter)
+        console.log(counter);
+        if (counter == 0) {
+            check();
+            $("#correctTimeUp").text("Correct: " + correct);
+            $("#incorrectTimeUp").text("Incorrect: " + incorrect);
+            $("#form").hide();
+            $("#endGameTimeUp").show();
+        } 
+    }, 1000);
+
+
+    $("#submit").click(function () {
+        counter = 10;
+        check();
+        $("#correctSubmit").text("Correct: " + correct);
+        $("#incorrectSubmit").text("Incorrect: " + incorrect);
+        $("#form").hide();
+        $("#endGameSubmit").show();
+    })
+    
+})
+
+
+
+
+
 function check() {
     var q1 = document.theForm.q1.value;
     var q2 = document.theForm.q2.value;
@@ -27,9 +56,6 @@ function check() {
     var q11 = document.theForm.q11.value;
     var q12 = document.theForm.q12.value;
     var q13 = document.theForm.q13.value;
-
-    var correct = 0;
-    var incorrect = 0;
 
     if (q1 == "b") {
         correct++;
@@ -84,5 +110,4 @@ function check() {
     } else {
         incorrect++;
     }
-    alert("you got: " + correct + " correct, and: " + incorrect + " incorrect")
 }

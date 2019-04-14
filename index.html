@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Trivia</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- <script src="https://code.jquery.com/jquery.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.4.0.js"
+        integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo=" crossorigin="anonymous"></script>
 </head>
-<body>
 
-        <button onclick="myFunction()">Start Test</button>
+<body>
+    <p id="instructions">This is a gamers test, you will have 20 seconds to answer 13 questions, once time is up you
+        will see your score! Good Luck!</p>
+    <button id="start">Start Test</button>
 
     <form name="theForm" id="form">
+        <p id="counter"></p>
+
         Mario is the mascot for what gaming system manufature?<br>
         <input type="radio" name="q1" value="a">Sega</br>
         <input type="radio" name="q1" value="b">Nintendo</br>
@@ -24,11 +32,11 @@
         <input type="radio" name="q2" value="c">Lugi</br>
         <input type="radio" name="q2" value="d">Master Chief</br><br>
 
-        This portable gaming console had the same amount of technology as nasa had when it was release...<br>
-        <input type="radio" name="q3" value="a">Game Gear</br>
-        <input type="radio" name="q3" value="b">N-Gage</br>
+        This portable gaming console used more computing power than the first lunar mission<br>
+        <input type="radio" name="q3" value="a">Game and Watch</br>
+        <input type="radio" name="q3" value="b">Tiger handhelds</br>
         <input type="radio" name="q3" value="c">Game Boy</br>
-        <input type="radio" name="q3" value="d">Game Com</br><br>
+        <input type="radio" name="q3" value="d">Atari portable</br><br>
 
         This was the absolute OFFICIALLY the worst game that ever came out for the original Atari..<br>
         <input type="radio" name="q4" value="a">Soccor</br>
@@ -42,7 +50,8 @@
         <input type="radio" name="q5" value="c">Virtual Boy</br>
         <input type="radio" name="q5" value="d">Game Cube</br><br>
 
-        This cheat code is famous for what following game? UP, UP, DOWN, DOWN, LEFT, RIGHT, LEFT, RIGHT, B, A, START..<br>
+        This cheat code is famous for what following game? UP, UP, DOWN, DOWN, LEFT, RIGHT, LEFT, RIGHT, B, A,
+        START..<br>
         <input type="radio" name="q6" value="a">Super Mario Bros 3</br>
         <input type="radio" name="q6" value="b">PacMan</br>
         <input type="radio" name="q6" value="c">Tetris</br>
@@ -54,7 +63,8 @@
         <input type="radio" name="q7" value="c">Duke Nukem</br>
         <input type="radio" name="q7" value="d">Turok</br><br>
 
-        This PC game was created by Blizzard Ent, and was the first game by Blizzard to be played competitive in many countries including South Korea... <br>
+        This PC game was created by Blizzard Ent, and was the first game by Blizzard to be played competitive in many
+        countries including South Korea... <br>
         <input type="radio" name="q8" value="a">Warcraft</br>
         <input type="radio" name="q8" value="b">HearthStone</br>
         <input type="radio" name="q8" value="c">World Of Warcraft</br>
@@ -66,7 +76,8 @@
         <input type="radio" name="q9" value="c">Jump Man</br>
         <input type="radio" name="q9" value="d">Luigi</br><br>
 
-        This game was almost canceled but was released as an Xbox exclusive First-Person Shooter that blew up till this day..<br>
+        This game was almost canceled but was released as an Xbox exclusive First-Person Shooter that blew up till this
+        day..<br>
         <input type="radio" name="q10" value="a">Call Of Duty 2</br>
         <input type="radio" name="q10" value="b">Halo</br>
         <input type="radio" name="q10" value="c">Doom</br>
@@ -78,7 +89,8 @@
         <input type="radio" name="q11" value="c">Mario</br>
         <input type="radio" name="q11" value="d">Doesnt have one</br><br>
 
-        This game was first released in NES, but later recreated for Playstaion 1 and was a massive success with many sequals to come...<br>
+        This game was first released in NES, but later recreated for Playstaion 1 and was a massive success with many
+        sequals to come...<br>
         <input type="radio" name="q12" value="a">Ryguard</br>
         <input type="radio" name="q12" value="b">Metal Gear Solid</br>
         <input type="radio" name="q12" value="c">Top Gun</br>
@@ -90,11 +102,25 @@
         <input type="radio" name="q13" value="c">Philips</br>
         <input type="radio" name="q13" value="d">Atari</br><br>
 
-        <input type="button" value="Submit" onclick="check()">
+        <!-- <input type="button" id="submit" value="Submit" onclick="check()"> -->
+        <button id="submit">Submit</button>
 
     </form>
-    
+
+    <div id="endGameTimeUp">
+        <p>Time is Up!!</p>
+        <p id="correctTimeUp"></p>
+        <p id="incorrectTimeUp"></p>
+
+    </div>
+    <div id="endGameSubmit">
+        <p>Lets see how you did!!</p>
+        <p id="correctSubmit"></p>
+        <p id="incorrectSubmit"></p>
+
+    </div>
 
     <script type="text/javascript" src="assets/javascript/app.js"></script>
 </body>
+
 </html>
