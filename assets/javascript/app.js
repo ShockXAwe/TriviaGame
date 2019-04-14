@@ -10,7 +10,7 @@ $("#start").click(function () {
     $("#instructions").hide();
     $("#start").hide();
 
-    var counter = 10;
+    var counter = 30;
     setInterval(function () {
         counter--;
         $("#counter").text("Time remaining: " + counter)
