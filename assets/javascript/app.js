@@ -5,8 +5,6 @@ $("#endGameSubmit").hide();
 var correct = 0;
 var incorrect = 0;
 
-
-
 $("#start").click(function () {
     $("#form").show();
     $("#instructions").hide();
@@ -28,7 +26,6 @@ $("#start").click(function () {
 
 
     $("#submit").click(function () {
-        counter = 10;
         check();
         $("#correctSubmit").text("Correct: " + correct);
         $("#incorrectSubmit").text("Incorrect: " + incorrect);
@@ -37,10 +34,6 @@ $("#start").click(function () {
     })
     
 })
-
-
-
-
 
 function check() {
     var q1 = document.theForm.q1.value;
