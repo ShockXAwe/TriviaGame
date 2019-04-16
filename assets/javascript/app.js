@@ -12,7 +12,7 @@ $("#start").click(function () {
     $("#start").hide();
     $("#intro").hide();
 
-    var counter = 3;
+    var counter = 60;
     setInterval(function () {
         counter--;
         $("#counter").text("Time remaining: " + counter)
