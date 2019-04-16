@@ -11,7 +11,7 @@ $("#start").click(function () {
     $("#start").hide();
 
     var counter = 100;
-    setInterval(function () {
+    setInterval(function() {
         counter--;
         $("#counter").text("Time remaining: " + counter)
         console.log(counter);
@@ -26,7 +26,8 @@ $("#start").click(function () {
 
 
     $("#submit").click(function () {
-        check();
+        check(); 
+        counter = null;
         $("#correctSubmit").text("Correct: " + correct);
         $("#incorrectSubmit").text("Incorrect: " + incorrect);
         $("#form").hide();
