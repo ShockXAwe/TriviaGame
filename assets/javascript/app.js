@@ -12,34 +12,35 @@ $("#start").click(function () {
     $("#start").hide();
     $("#intro").hide();
 
-    var counter = 60;
+    var counter = 3;
     setInterval(function () {
         counter--;
         $("#counter").text("Time remaining: " + counter)
         console.log(counter);
         if (counter == 0) {
             check();
-            endGameText();
+            $("#correctTimeUp").text("Correct: " + correct);
+            $("#incorrectTimeUp").text("Incorrect: " + incorrect);
+            $("#form").hide();
+            $("#counter").hide();
             $("#endGameTimeUp").show();
         }
     }, 1000);
 
 
     $("#submit").click(function () {
-        endGameText();
         check();
         counter = null;
+        $("#correctSubmit").text("Correct: " + correct);
+        $("#incorrectSubmit").text("Incorrect: " + incorrect);
+        $("#form").hide();
+        $("#counter").hide();
         $("#endGameSubmit").show();
     })
 
 })
 
-function endGameText() {
-    $("#correctSubmit").text("Correct: " + correct);
-    $("#incorrectSubmit").text("Incorrect: " + incorrect);
-    $("#form").hide();
-    $("#counter").hide();
-}
+
 
 function check() {
     var q1 = document.theForm.q1.value;
