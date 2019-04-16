@@ -13,30 +13,38 @@
 </head>
 
 <body>
-    <p id="instructions">This is a gamers test, you will have 1 minute to answer 13 questions, once time is up you
-        will see your score! Good Luck!</p>
-    <button id="start">Start Test</button>
+    <div id="intro">
+        <p id="instructions">This is a gamers test, you will have 1 minute to answer 13 questions, once time is up you
+            will see your score! Good Luck!</p>
+        <button id="start">Start Test</button>
+    </div>
+
+    <p id="counter"></p>
 
     <form name="theForm" id="form">
-        <p id="counter"></p>
+
+        <div class id="questions">
 
         Mario is the mascot for what gaming system manufature?<br>
-        <input type="radio" name="q1" value="a">Sega</br>
-        <input type="radio" name="q1" value="b">Nintendo</br>
-        <input type="radio" name="q1" value="c">Atari</br>
-        <input type="radio" name="q1" value="d">Sony</br><br>
+            <input type="radio" name="q1" value="a">Sega</br>
+            <input type="radio" name="q1" value="b">Nintendo</br>
+            <input type="radio" name="q1" value="c">Atari</br>
+            <input type="radio" name="q1" value="d">Sony</br><br>
+        
 
         What gaming system mascot has the catch phrase "Gotta go fast!!"<br>
-        <input type="radio" name="q2" value="a">Knuckles</br>
-        <input type="radio" name="q2" value="b">Sonic</br>
-        <input type="radio" name="q2" value="c">Lugi</br>
-        <input type="radio" name="q2" value="d">Master Chief</br><br>
+            <input type="radio" name="q2" value="a">Knuckles</br>
+            <input type="radio" name="q2" value="b">Sonic</br>
+            <input type="radio" name="q2" value="c">Lugi</br>
+            <input type="radio" name="q2" value="d">Master Chief</br><br>
+        
 
         This portable gaming console used more computing power than the first lunar mission<br>
         <input type="radio" name="q3" value="a">Game and Watch</br>
         <input type="radio" name="q3" value="b">Tiger handhelds</br>
         <input type="radio" name="q3" value="c">Game Boy</br>
         <input type="radio" name="q3" value="d">Atari portable</br><br>
+        
 
         This was the absolute OFFICIALLY the worst game that ever came out for the original Atari..<br>
         <input type="radio" name="q4" value="a">Soccor</br>
@@ -102,6 +110,8 @@
         <input type="radio" name="q13" value="c">Philips</br>
         <input type="radio" name="q13" value="d">Atari</br><br>
 
+    </div>
+    
         <button type="button" id="submit">Submit</button>
 
     </form>

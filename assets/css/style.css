@@ -1,0 +1,54 @@
+body {
+    background-image: url(/assets/css/portalbg.png);
+    background-size: cover;
+    z-index: -100;
+  }
+
+  #intro{
+    width: 790px;
+    margin-left: 23%;
+    margin-top: 25%;
+    color: white;
+  }
+
+  #endGameTimeUp, #endGameSubmit{
+    width: 790px;
+    margin-left: 23%;
+    margin-top: 25%;
+    color: white;
+    text-align: center;
+  }
+
+  #instructions{
+      color: white;
+  }
+
+  #form{
+    width: 790px;
+    margin-left: 23%;
+  }
+  
+  #counter{
+    width: 790px;
+    margin-left: 23%;
+    color: red;
+    font-size: 20px;
+    position: fixed;
+    
+  }
+
+  #questions{
+    width: 790px;
+    margin-left: 23%;
+    color: white;
+    
+  }
+
+  #submit{
+    width: 790px;
+    margin-left: 23%;
+  }
+
+
+
+ 

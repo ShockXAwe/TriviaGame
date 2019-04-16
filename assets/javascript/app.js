@@ -6,9 +6,11 @@ var correct = 0;
 var incorrect = 0;
 
 $("#start").click(function () {
+    debugger;
     $("#form").show();
     $("#instructions").hide();
     $("#start").hide();
+    $("#intro").hide();
 
     var counter = 100;
     setInterval(function() {
@@ -20,6 +22,7 @@ $("#start").click(function () {
             $("#correctTimeUp").text("Correct: " + correct);
             $("#incorrectTimeUp").text("Incorrect: " + incorrect);
             $("#form").hide();
+            $("#counter").hide();
             $("#endGameTimeUp").show();
         } 
     }, 1000);
@@ -31,6 +34,7 @@ $("#start").click(function () {
         $("#correctSubmit").text("Correct: " + correct);
         $("#incorrectSubmit").text("Incorrect: " + incorrect);
         $("#form").hide();
+        $("#counter").hide();
         $("#endGameSubmit").show();
     })
     
