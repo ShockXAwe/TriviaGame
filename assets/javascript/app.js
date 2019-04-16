@@ -6,7 +6,6 @@ var correct = 0;
 var incorrect = 0;
 
 $("#start").click(function () {
-    debugger;
     $("#form").show();
     $("#instructions").hide();
     $("#start").hide();
